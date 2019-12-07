@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="data.com">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name="com.here.android.mpa.service.MapService"
+            android:label="Label"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="Map"></action>
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.here.android.maps.appid"
+            android:value="uTjYKwR9sUDHNGwVFSFR" />
+        <meta-data
+            android:name="com.here.android.maps.apptoken"
+            android:value="S2JV9OTuBtM1AR__c8Urkw" />
+    <meta-data
+        android:name="com.here.android.maps.license.key"
+        android:value="CiWgMb4uMiF+KbuwS1wkXyCRCWAAxGcuWzsobr/BBU1X+sARe9nUVDEcsQ2mkLJci3sqEYjzk8M559Cka2lnNWiAmV0D0jX8smy4XMjNMIv4TKXskatUK0N8QrCJp34xGnPVGgrV3jutzBbeBnRxaje0nyvojgGqCRldYvIHWcGPybD1ecmcwqfE5NlC8LAMlIT5NECAaPMmmtVGj5izhhEGXGOGXUmSx7ADSdZycwAB9BwgdJ4Slr2qePxBMfPlTzNpWtHWpEynq+zlG9eqfJdMLJnwuRLXie5qcd7wH7xGU9wDvKteAQd0D2G5MtlHeQHLmrrhAnp2P37ciKuEjr4ZrPhuL0q1Whv5ap9cXABgOvl9qFibuIitOH5KQQrnZxi81qyCURi9jPSLwPRRuWq+28vPMyVUjQEklDBa9FByj5U2B5PBvCYGvQeyvDuUHbifHfgLizvRAXi0HYGDw6MVAX11A5d/efkvoKk910tS+DdYdyIDGc61AX09g3ppXwnzAkXl+GXrIF9Srvj7Njyg4n4FrsTBBQFZxx2i2MHJTIp5Dxo8dvk30KUaxnOs75zw/nl/AtY6OWb0oeCIC42uEficTUshAErwAkue6s1EXit+zNcXyZlXTip1ajne1B5ykdgstPjoBNZmIJqb+16fCcqTocOaVwNP4VUWbtA=" />
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+</manifest>
